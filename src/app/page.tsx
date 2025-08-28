@@ -38,7 +38,7 @@ export default function Home() {
             <div className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
               <h3 className="text-xl font-semibold mb-4">Blazing Fast</h3>
               <p className="text-gray-700">
-                Leveraging Rust's performance, Astranova Client delivers unparalleled speed for your HTTP requests.
+                Leveraging Rust&apos;s performance, Astranova Client delivers unparalleled speed for your HTTP requests.
               </p>
             </div>
             <div className="bg-gray-100 p-8 rounded-lg shadow-md text-center">
@@ -68,7 +68,7 @@ export default function Home() {
               <div className="text-5xl font-bold text-blue-600 mb-4">1</div>
               <h3 className="text-xl font-semibold mb-4">Install & Launch</h3>
               <p className="text-gray-700">
-                Download Astranova Client for your OS and run the installer. It's quick and easy!
+                Download Astranova Client for your OS and run the installer. It&apos;s quick and easy!
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
