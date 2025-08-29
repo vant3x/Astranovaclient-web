@@ -15,7 +15,7 @@ export default function Home({ isMobileMenuOpen }: HomeProps) {
           <div className="absolute inset-0 bg-black opacity-20"></div>
           <div className="absolute inset-0 bg-dots opacity-10"></div>
         </div>
-        <div className="container mx-auto px-4 relative z-10">
+        <div className={`container mx-auto px-4 relative z-10 ${isMobileMenuOpen ? 'hidden' : ''}`}>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up max-w-2xl mx-auto">
             Astranova Client: Your Modern HTTP Companion
           </h1>

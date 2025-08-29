@@ -55,3 +55,8 @@ body {
   background-image: radial-gradient(#4a5568 1px, transparent 1px);
   background-size: 20px 20px;
 }
+
+/* Hide hero section when mobile menu is open */
+body.mobile-menu-open section.relative {
+  display: none;
+}

@@ -13,6 +13,14 @@ export default function Navbar({ isMobileMenuOpen, setIsMobileMenuOpen }: Navbar
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add('mobile-menu-open');
+    } else {
+      document.body.classList.remove('mobile-menu-open');
+    }
+  }, [isMobileMenuOpen]);
+
   return (
     <nav className="bg-white text-gray-900 p-4 fixed w-full z-10 shadow-md top-0">
       <div className="container mx-auto flex justify-between items-center">
