@@ -12,13 +12,13 @@ export default function Home() {
           <div className="absolute inset-0 bg-dots opacity-10"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up max-w-2xl mx-auto">
             Astranova Client: Your Modern HTTP Companion
           </h1>
           <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-200">
             A powerful, fast, and intuitive HTTP client built with Rust.
           </p>
-          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 animate-fade-in-up animation-delay-400">
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 justify-center animate-fade-in-up animation-delay-400">
             <Link href="#download" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full text-lg font-semibold transition duration-300 ease-in-out shadow-lg">
               Download Now
             </Link>

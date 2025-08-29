@@ -55,7 +55,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 bg-gray-800 pt-16 px-2 space-y-2 z-50">
+          <div className="md:hidden fixed inset-0 bg-gray-800 pt-16 px-2 space-y-2 z-[999]">
             <Link href="/" className="block text-white hover:text-gray-300 py-2">Home</Link>
             <Link href="#features" className="block text-white hover:text-gray-300 py-2">Features</Link>
             <Link href="#screenshots" className="block text-white hover:text-gray-300 py-2">Screenshots</Link>
