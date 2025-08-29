@@ -2,11 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import ClientThreeBackground from '../../components/ClientThreeBackground'; 
 
-export default function Home() {
+interface HomeProps {
+  isMobileMenuOpen: boolean;
+}
+
+export default function Home({ isMobileMenuOpen }: HomeProps) {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <section className="relative bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20 md:py-32 flex items-center justify-center text-center overflow-hidden">
-        <ClientThreeBackground /> 
+        {!isMobileMenuOpen && <ClientThreeBackground />} 
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black opacity-20"></div>
           <div className="absolute inset-0 bg-dots opacity-10"></div>
