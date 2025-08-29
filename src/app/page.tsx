@@ -2,20 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import ClientThreeBackground from '../../components/ClientThreeBackground'; 
 
-interface HomeProps {
-  isMobileMenuOpen: boolean;
-}
-
-export default function Home({ isMobileMenuOpen }: HomeProps) {
+export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <section className="relative bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20 md:py-32 flex items-center justify-center text-center overflow-hidden">
-        {!isMobileMenuOpen && <ClientThreeBackground />} 
+        <ClientThreeBackground /> 
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black opacity-20"></div>
           <div className="absolute inset-0 bg-dots opacity-10"></div>
         </div>
-        <div className={`container mx-auto px-4 relative z-10 ${isMobileMenuOpen ? 'hidden' : ''}`}>
+        <div className="container mx-auto px-4 relative z-10 hero-content">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up max-w-2xl mx-auto">
             Astranova Client: Your Modern HTTP Companion
           </h1>

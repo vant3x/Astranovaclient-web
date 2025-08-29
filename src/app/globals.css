@@ -72,9 +72,8 @@ canvas {
 }
 
 /* Crear un contexto de apilamiento para el hero section */
-.hero-section {
-  position: relative;
-  z-index: 1;
+.mobile-menu-open .hero-content {
+  display: none;
 }
 
 /* Asegurar que el overlay del menú esté por encima de todo */
