@@ -7,6 +7,10 @@ const DynamicThreeBackground = dynamic(() => import('./ThreeBackground'), {
   ssr: false,
 });
 
-export default function ClientThreeBackground() {
-  return <DynamicThreeBackground />;
+interface ClientThreeBackgroundProps {
+  isMenuOpen?: boolean;
+}
+
+export default function ClientThreeBackground({ isMenuOpen = false }: ClientThreeBackgroundProps) {
+  return <DynamicThreeBackground isMenuOpen={isMenuOpen} />;
 }

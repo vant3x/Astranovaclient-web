@@ -56,7 +56,35 @@ body {
   background-size: 20px 20px;
 }
 
-/* Hide hero section when mobile menu is open */
-body.mobile-menu-open section.relative {
-  display: none;
+/* CSS para el menú móvil */
+.mobile-menu-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Asegurar que el canvas de Three.js no interfiera */
+canvas {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+/* Crear un contexto de apilamiento para el hero section */
+.hero-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Asegurar que el overlay del menú esté por encima de todo */
+.mobile-menu-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 9999 !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
