@@ -12,8 +12,14 @@ export default function Navbar() {
         <div className="space-x-4">
           <Link href="#features" className="hover:text-blue-600 transition duration-300">Features</Link>
           <Link href="#screenshots" className="hover:text-blue-600 transition duration-300">Doc</Link>
-          <Link href="#screenshots" className="hover:text-blue-600 transition duration-300">Screenshots</Link>
-          <Link href="#download" className="hover:text-blue-600 transition duration-300">Download</Link>
+          {isMobileMenuOpen && (
+  <div className="md:hidden fixed inset-0 bg-gray-800 pt-16 px-2 space-y-2 z-50">
+    <Link href="/" className="block text-white hover:text-gray-300 py-2">Home</Link>
+    <Link href="#features" className="block text-white hover:text-gray-300 py-2">Features</Link>
+    <Link href="#screenshots" className="block text-white hover:text-gray-300 py-2">Screenshots</Link>
+    <Link href="#download" className="block text-white hover:text-gray-300 py-2">Download</Link>
+  </div>
+)}
           <Link href="https://github.com/vant3x/astranova-client-rust" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition duration-300">GitHub</Link>
         </div>
       </div>

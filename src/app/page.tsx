@@ -18,7 +18,7 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-200">
             A powerful, fast, and intuitive HTTP client built with Rust.
           </p>
-          <div className="space-x-4 animate-fade-in-up animation-delay-400">
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 animate-fade-in-up animation-delay-400">
             <Link href="#download" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full text-lg font-semibold transition duration-300 ease-in-out shadow-lg">
               Download Now
             </Link>
