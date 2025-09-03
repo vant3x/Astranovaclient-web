@@ -123,12 +123,13 @@ export default function Home() {
             Download the latest version for your operating system.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
+          <a href="#" download={"/assets/bundles/Astranova-client-osx_v0.1.0_alpha.dmg"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
+              Download for macOS
+            </a>
             <a href="#" className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
               Download for Windows
             </a>
-            <a href="#" className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
-              Download for macOS
-            </a>
+   
             <a href="#" className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
               Download for Linux
             </a>
