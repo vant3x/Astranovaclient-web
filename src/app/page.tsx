@@ -95,11 +95,11 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <Image src="/assets/screens/v01/screen1.png" alt="Screenshot 1" width={600} height={400} className="rounded-md w-full h-auto" />
+              <Image src="/assets/screens/v01/screen2.png" alt="Screenshot 1" width={600} height={400} className="rounded-md w-full h-auto" />
               <p className="text-center mt-2 text-gray-600">Clean Request Interface</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <Image src="/assets/screens/v01/screen2.png" alt="Screenshot 2" width={600} height={400} className="rounded-md w-full h-auto" />
+              <Image src="/assets/screens/v01/screen1.png" alt="Screenshot 2" width={600} height={400} className="rounded-md w-full h-auto" />
               <p className="text-center mt-2 text-gray-600">Response Viewer</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
