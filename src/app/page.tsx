@@ -57,7 +57,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it Works Section */}
       <section className="py-16 md:py-24 bg-gray-200">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -89,7 +88,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Screenshots Section */}
       <section className="py-16 md:py-24 bg-gray-100" id="screenshots">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -97,15 +95,15 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <Image src="/assets/screens/screen1.png" alt="Screenshot 1" width={600} height={400} className="rounded-md w-full h-auto" />
+              <Image src="/assets/screens/v01/screen1.png" alt="Screenshot 1" width={600} height={400} className="rounded-md w-full h-auto" />
               <p className="text-center mt-2 text-gray-600">Clean Request Interface</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <Image src="/assets/screens/screen2.png" alt="Screenshot 2" width={600} height={400} className="rounded-md w-full h-auto" />
+              <Image src="/assets/screens/v01/screen2.png" alt="Screenshot 2" width={600} height={400} className="rounded-md w-full h-auto" />
               <p className="text-center mt-2 text-gray-600">Response Viewer</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <Image src="/assets/screens/screen3.png" alt="Screenshot 3" width={600} height={400} className="rounded-md w-full h-auto" />
+              <Image src="/assets/screens/v01/screen3.png" alt="Screenshot 3" width={600} height={400} className="rounded-md w-full h-auto" />
               <p className="text-center mt-2 text-gray-600">History & Collections</p>
             </div>
           </div>
@@ -113,7 +111,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Download Section */}
       <section className="py-16 md:py-24 bg-white" id="download">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -123,14 +120,14 @@ export default function Home() {
             Download the latest version for your operating system.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
-          <a href="#" download={"/assets/bundles/Astranova-client-osx_v0.1.0_alpha.dmg"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
+          <a href="#" download={"/assets/bundles/AstraNova.app.tgz"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
               Download for macOS
             </a>
-            <a href="#" className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
+            <a href="#" download={"/assets/bundles/astranova-client-0.1.0-x86_64.msi"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
               Download for Windows
             </a>
    
-            <a href="#" className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
+            <a href="#" download={"/assets/bundles/astranova-client_0.1.0_amd64.deb"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
               Download for Linux
             </a>
           </div>
@@ -138,7 +135,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 text-center">
         <div className="container mx-auto px-4">
           <p>&copy; {new Date().getFullYear()} Astranova Client.           by <Link className="text-underline underline" href="https://x.com/alevant3x" target="_blank">Alevante</Link>
@@ -147,7 +143,7 @@ export default function Home() {
             <Link href="https://github.com/vant3x/astranova-client-rust" target="_blank" rel="noopener noreferrer" className="hover:underline">
               GitHub
             </Link>
-            {/* Add more footer links as needed */}
+          
           </div>
         </div>
       </footer>
