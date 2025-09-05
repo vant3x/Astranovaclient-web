@@ -95,11 +95,11 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <Image src="/assets/screens/v01/screen2.png" alt="Screenshot 1" width={600} height={400} className="rounded-md w-full h-auto" />
+              <Image src="/assets/screens/v01/screen1.png" alt="Screenshot 1" width={600} height={400} className="rounded-md w-full h-auto" />
               <p className="text-center mt-2 text-gray-600">Clean Request Interface</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <Image src="/assets/screens/v01/screen1.png" alt="Screenshot 2" width={600} height={400} className="rounded-md w-full h-auto" />
+              <Image src="/assets/screens/v01/screen2.png" alt="Screenshot 2" width={600} height={400} className="rounded-md w-full h-auto" />
               <p className="text-center mt-2 text-gray-600">Response Viewer</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
@@ -123,11 +123,11 @@ export default function Home() {
           <a href="#" download={"/assets/bundles/AstraNova.app.tgz"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
               Download for macOS
             </a>
-            <a href="#" download={"/assets/bundles/astranova-client-0.1.2-x86_64.msi"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
+            <a href="#" download={"/assets/bundles/astranova-client-0.1.3-x86_64.msi"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
               Download for Windows
             </a>
    
-            <a href="#" download={"/assets/bundles/astranova-client_0.1.2_amd64.deb"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
+            <a href="#" download={"/assets/bundles/astranova-client_0.1.3_amd64.deb"} className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
               Download for Linux
             </a>
             <a href="https://github.com/vant3x/astranova-client-rust/releases" target="_blank" rel="noopener noreferrer" className="bg-gray-600 text-white hover:bg-gray-700 px-8 py-4 rounded-lg text-xl font-semibold transition duration-300 ease-in-out shadow-lg">
